@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Docs youtube</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+<body>
+    <div class="navbar">
+        <a href="../index.html">Accueil</a>
+        <a href="about.html">À Propos</a>
+        <a href="connect.html">Connexion</a>
+        <a href="#contact">Contact</a>
+      </div>   
+      
+      <header>
+        <h1 id="Title-page">Contactez-nous</h1>
+    </header>
+    <main>
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+    <hr class="separed2">
+
+    <div class="footer-2">
+        <img src="../img/logo-ytb.png" class="logo-ytb3" alt="logo de youtube">
+        <p class="Copyright2">© 2025 Fadi Makumbi. Tous droits réservés.</p>
+        <h3 class="logo-bas">Youtube Docs</h3>
+      </div>
+</body>
+      
+      <style>
+    #Title-page{
+        position: absolute;
+        top: 15%; /* 50% de la hauteur de la fenêtre */
+        left: 50%; /* 50% de la largeur de la fenêtre */
+        transform: translate(-50%, -50%); /* centrer parfaitement */
+        font-family: roboto;
+    }
+    @media   (max-width: 430px) {
+    #Title-page{
+        width: 103%;
+        left: 76%; /* 50% de la largeur de la fenêtre */
+        font-size: 30px;
+         }
+             }           
+
+
+        main {
+    padding: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-form{
+    position: absolute;
+    top: 40%; /* 50% de la hauteur de la fenêtre */
+    left: 50%; /* 50% de la largeur de la fenêtre */
+    transform: translate(-50%, -50%); /* centrer parfaitement */
+
+}
+
+
+
+label {
+    margin-bottom: 0.5em;
+    color: #0078D4;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056A5;
+}
+        body {
+            
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    place-content: center ;
+    height: 100vh;
+    margin: 0;
+}
+@media   (max-width: 1300px) {
+    body{
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    height: 100vh;
+    margin: 0;
+
+     
+         }
+             }
+.navbar2{
+    display: flex;
+    position: absolute; /* Position absolue par rapport à la fenêtre */
+    top: 39px; /* Distance depuis le haut */
+    right: 220px; /* Distance depuis la droite */
+    display: flex; /* Alignement des liens */
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+@media   (max-width: 1300px) {
+    .navbar2{
+    display: flex;
+    align-self: center ;
+    justify-content: start;
+    height: 3vh;
+    margin: 0;
+     
+         }
+            }
+
+    @media   (max-width: 875px) {
+    .navbar2{
+        display: flex;
+        position: absolute;
+        top: 0px; /* Distance depuis le haut */
+        left: -1%; /* Distance depuis la droite */
+        height: 60px;
+        width: 103%;
+        text-align: end;
+         }
+            }    
+
+ @media   (max-width: 430px) {
+    .navbar2{
+        display: flex;
+        position: absolute;
+        top: 0px; /* Distance depuis le haut */
+        left: -1%; /* Distance depuis la droite */
+        height: 60px;
+        width: 103%;
+        text-align: end;
+         }
+             }           
+
+.navbar2 a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Espacement entre les liens */
+    font-size: 18px;
+    font-family: roboto;
+}
+.navbar2 a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    
+}
+
+@media  (max-width: 430px) {
+
+    .Login-container {
+     position: absolute;
+     top: 20%;
+         }
+             }           
+
+    
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff000f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button:hover {
+    background-color: #d66d0b;
+    scale: 1rem;
+}
+.footer-2{
+    display: flex;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: justify;
+
+}
+.logo-ytb3{
+position: absolute;
+top: 110%;
+left: 10%;
+height: 90px;
+
+
+}
+.separed2{
+    width: 100%;
+    border: none;
+    position: absolute;
+    right: 0%;
+    top: 85%;
+    border-top: 5px solid #ffffff;
+    z-index: 100;
+
+}
+.Copyright2{
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    width: 40%;
+
+
+}
+
+    </style>
+</html>
