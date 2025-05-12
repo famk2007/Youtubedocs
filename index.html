@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head> <!--Il y'a pas d'erreur à signaler dans ce code html-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Youtube Docs</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+ <body>
+      <div class="container"></div>
+        <div class="header">
+          <img src="img/logo-ytb.png" class="logo-ytb" alt="logo de youtube">
+          <img src="img/loop.png" alt="loupe" class="search-icon" id="search-icon">
+          <h3 class="text-logo">Youtube Docs</h3>
+          <div class="search-bar-container" id="search-bar-container">
+            <input type="text" class="search-bar" id="searchBar" placeholder="Rechercher...">
+            <button onclick="searchPage()" type="submit" class="search-button">Chercher</button>
+        </div>
+          <div class="navbar">
+            <a href="#home">Accueil</a>
+            <a href="Pages/about.html">À Propos</a>
+            <a href="Pages/connect.html">Connexion</a>
+            <a href="Pages/contact.html">Contact</a>
+          </div>  
+
+          <button id="toggleMenu">☰</button>
+
+        <!--<hr class="centered">-->
+        </div>
+        <div class="content">
+          <h1 id="titre-1">Bienvenue sur Youtube Docs</h1>
+          <h4 id="dessous">vous trouverez ici des astuces, des conseils et des informations essentiels pour réussir sur youtube</h4>
+             <p class="text-2">Tu rêves de célébrité sur YouTube, de vidéos virales et de revenus impressionnants ? YouTube Docs est là pour te guider pas à pas vers le succès.
+               Découvre des stratégies testées et approuvées pour attirer des milliers de vues, captiver une audience fidèle et transformer ta passion en une activité lucrative. 
+               Grâce à nos conseils, tu apprendras à optimiser tes vidéos, à utiliser les algorithmes à ton avantage et à construire une marque qui marque les esprits !
+            </p>
+              <p class="text-3">Notre site te dévoile les secrets des créateurs à succès : de la création de contenu engageant au choix des bons mots-clés, en passant par les collaborations et les tendances incontournables.
+                Nous te montrerons comment monétiser efficacement ton contenu grâce aux publicités, aux partenariats et aux différentes sources de revenus possibles sur la plateforme. 
+                Que tu sois débutant ou déjà actif sur YouTube, nos guides et astuces t’aideront à accélérer ta croissance et à faire décoller tes statistiques.</p>
+                <p class="text-4">Tu veux des résultats concrets ? YouTube Docs te propose des stratégies simples et adaptées à ton style
+                  . Augmente tes abonnés, booste ton engagement et transforme ton projet en véritable business. Le succès n’attend que toi, 
+                  alors lance-toi dès aujourd’hui
+                   et deviens une référence sur YouTube.</p>
+        </div>
+
+        <div class="menu" id="menu">
+          <ul>
+            <li class="sous-titre-1">menu</li>
+            <li><a>partenariat</a></li>
+            <li><a>monétisation</a></li>
+            <li><a>type de chaine</a></li>
+            <li><a>les revenues</a></li>
+            <li><a>les vidéos les plus vues</a></li>
+            <li><a>les musiques</a></li>
+            <li><a>les youtubeur</a></li>
+            <li><a>le streaming</a></li>
+            <li><a>youtube premium</a></li>
+            <li class="sous-titre-1">Astuce</li>
+            <li><a>comment creer sa<br>chaine</a></li>
+            <li><a>comment mettre en ligne sa vidéos ?</a></li>
+            <li><a>comment bien démarer sa chaine</a></li>
+            <li><a>comment etre<br>rémunerer ?</a></li>
+            <li><a>comment faire plus<br>de vues</a></li>
+            <li><a>comment avoir plus de j'aime</a></li>
+            <li><a>comment faire des vues sur un short</a></li>
+            <li><a>comment avoir plus d'abonné en peu de temps</a></li>
+            <li><a>comment faire des placement de produit</a></li>
+            <li><a>comment avoir des sponsors</a></li>
+            <li><a>comment faire un bon montage</a></li>
+            <li><a>comment faire des bonne miniature</a></li>
+          </ul>
+        </div>
+        <div class="footer">
+          <hr class="separed">
+          <img src="img/logo-ytb.png" class="logo-ytb2" alt="logo de youtube">
+          <p class="Copyright">© 2025 Fadi Makumbi. Tous droits réservés.</p>
+          <h3 class="logo-bas">Youtube Docs</h3>
+        </div>
+
+     
+      <script>
+document.getElementById("toggleMenu").addEventListener("click", function() {
+    let menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+});
+
+
+document.getElementById("search-icon").addEventListener("click", function() {
+    let searchBar = document.getElementById("search-bar-container");
+    searchBar.style.display = (searchBar.style.display === "none" || searchBar.style.display === "") ? "block" : "none";
+});
+document.getElementsByClassName("search-icon").addEventListener("click", function() {
+    let menu = document.getElementById("search-bar-container");
+    
+    // Ajoute l'effet de rebond
+    search-bar-container.classList.add("bounce");
+
+    // Supprime l'effet après l'animation pour pouvoir le rejouer au prochain clic
+    setTimeout(() => {
+      search-bar-container.classList.remove("bounce");
+    }, 600);
+});
+function searchPage() {
+    let input = document.getElementById("searchBar").value.toLowerCase(); // Récupérer la valeur de la recherche
+    let pages = {
+        "connexion": "Pages/connect.html",
+        "à propos": "Pages/about.html",
+        "contact": "Pages/contact.html"
+    };
+
+    if (pages[input]) {
+        window.location.href = pages[input]; // Redirection vers la page correspondante
+    } else {
+        alert("Page non trouvée !");
+    }
+}
+
+
+  </script>
+  </body>
+</html>
